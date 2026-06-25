@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ggbet 使用说明 · 资料索引与产品导览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf7f2;
+            color: #2c2b28;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf9;
+            padding: 2.8rem 2.2rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1.2rem 0.8rem; }
+            .container { padding: 2rem 1.2rem; }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.2rem;
+            border-left: 5px solid #b6a58b;
+            padding-left: 1.2rem;
+            color: #2b241c;
+        }
+
+        .subhead {
+            font-size: 0.95rem;
+            color: #6f665d;
+            margin-top: 0.2rem;
+            padding-left: 2rem;
+            border-bottom: 1px solid #e6ddd0;
+            padding-bottom: 1.4rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px dashed #dcd0c2;
+            color: #3b3229;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.4rem 0;
+            color: #40362c;
+        }
+
+        p {
+            margin: 0.8rem 0;
+            text-align: justify;
+        }
+
+        .info-block {
+            background: #f3efe9;
+            border-left: 6px solid #b6a58b;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 4px 12px 12px 4px;
+            font-size: 0.95rem;
+        }
+
+        .info-block p {
+            margin: 0.3rem 0;
+        }
+
+        .highlight-box {
+            background: #efe9e1;
+            border-radius: 12px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.6rem 0;
+            border: 1px solid #ddd2c2;
+        }
+
+        .highlight-box p {
+            margin: 0.2rem 0;
+            font-size: 0.98rem;
+        }
+
+        ul {
+            margin: 0.6rem 0 0.8rem 1.8rem;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            padding-left: 1.4rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #9c8a78;
+        }
+
+        .faq-item {
+            margin: 1.4rem 0;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #3e3328;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin: 0.1rem 0 0.2rem 0;
+            padding-left: 0.8rem;
+            color: #3d3731;
+        }
+
+        a {
+            color: #6d4f2e;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: #cabaaf;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #3e2c1b;
+            text-decoration-color: #3e2c1b;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e5ddd2;
+            padding: 0.1rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            letter-spacing: 0.3px;
+            color: #3f352c;
+            margin-right: 0.3rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0d4c5;
+            font-size: 0.85rem;
+            color: #6f6255;
+            text-align: center;
+        }
+
+        .source-line {
+            font-size: 0.9rem;
+            background: #f4efe9;
+            padding: 0.6rem 1.2rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 0.6rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>ggbet · 资料索引与产品说明</h1>
+    <div class="subhead">以信息整理视角梳理使用场景、功能边界与参考要点</div>
+
+    <p>本文档基于对 <a href="https://cn-portal-ggbet.com">ggbet</a> 公开资料的系统整理，从信息索引与产品介绍角度出发，归纳其主要功能、适用场景及使用建议。内容力求简洁、克制、不夸大，仅作为参考性说明，不构成任何操作指导或承诺。</p>
+
+    <div class="info-block">
+        <p><span class="tag">摘要</span> ggbet 是一个以在线娱乐与信息交互为核心的平台，用户可通过统一界面浏览多种娱乐内容、获取资讯并参与互动模块。平台侧重视觉呈现与操作流畅度，在功能分区上较为明确。</p>
+    </div>
+
+    <h2>功能亮点</h2>
+    <p>根据已有资料与界面结构分析，以下为 <strong>ggbet</strong> 的几个主要特征：</p>
+    <ul>
+        <li><strong>模块化布局</strong> —— 首页采用卡片式与列表式混合结构，分类入口清晰，便于快速定位不同版块。</li>
+        <li><strong>信息聚合</strong> —— 平台整合了赛事动态、娱乐排行、用户反馈等数据，形成一站式信息流。</li>
+        <li><strong>交互反馈</strong> —— 页面操作响应较快，悬浮、点击与切换动画克制且统一，不干扰主流程。</li>
+        <li><strong>多端适配</strong> —— 响应式设计覆盖桌面与移动端，排版结构在窄屏下仍保持可读性。</li>
+    </ul>
+
+    <h2>使用场景参考</h2>
+    <p>结合常见的用户需求，以下列举几种适宜的使用方式：</p>
+
+    <div class="highlight-box">
+        <p><strong>场景一 · 信息浏览与对比</strong></p>
+        <p>用户可通过 <a href="https://cn-portal-ggbet.com">ggbet</a> 浏览多个类目的信息展示，利用平台内置的排序或筛选逻辑对比不同条目。适合对数据呈现有基础需求的用户。</p>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>场景二 · 娱乐内容与资讯跟踪</strong></p>
+        <p>平台会定期更新相关内容，使用者可借助分类标签和搜索入口跟进自己关注的领域。建议结合个人兴趣有选择地查看，避免信息过载。</p>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>场景三 · 界面体验与功能测试</strong></p>
+        <p>对于关注交互设计或前端实现的学习者，也可将 ggbet 作为一个观察案例，分析其布局逻辑、组件复用与响应式策略。</p>
+    </div>
+
+    <h2>使用建议</h2>
+    <p>基于平台性质与常见使用习惯，整理以下几条建议供参考：</p>
+    <ul>
+        <li>首次使用时可先浏览首页各区域，了解整体分类与信息层级，不必急于操作。</li>
+        <li>各功能模块均有独立标题与内容说明，建议按需进入对应板块，避免重复刷新。</li>
+        <li>平台内容会动态更新，若需获取最新信息，建议以官方页面显示为准。</li>
+        <li>注意区分信息展示与互动入口，在点击任何链接前确认其功能描述。</li>
+    </ul>
+
+    <h2>常见疑问摘要</h2>
+
+    <div class="faq-item">
+        <strong>Q：ggbet 是否需要注册才能使用？</strong>
+        <p>根据公开界面，部分内容可直接浏览，部分互动功能可能需要注册或登录。具体以实际页面提示为准。</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Q：平台上的信息是否实时更新？</strong>
+        <p>平台会进行周期性内容更新，但不同模块的刷新频率可能不同。对于时效性要求较高的信息，建议直接访问对应页面确认。</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Q：移动端体验与桌面端有何差异？</strong>
+        <p>移动端针对触控操作进行了适配，导航位置、卡片大小和交互手势有所调整，但核心功能与数据展示与桌面端基本一致。</p>
+    </div>
+
+    <h2>补充说明</h2>
+    <p>以上内容均基于公开界面与常规使用逻辑整理，不包含任何非公开信息、未经验证的陈述或诱导性表述。使用 <a href="https://cn-portal-ggbet.com">ggbet</a> 时，请以平台实际展示为准，并根据个人需要合理操作。</p>
+
+    <div class="info-block">
+        <p><span class="tag">提示</span> 本页面为产品说明与信息索引用途，不提供下载、注册链接或第三方跳转。所有引用均指向官方页面，请自行甄别并遵守平台规则。</p>
+    </div>
+
+    <div class="footer-note">
+        <span>资料整理 · 仅供参考</span>
+    </div>
+
+</div>
+</body>
+</html>
